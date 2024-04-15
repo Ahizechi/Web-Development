@@ -9,6 +9,7 @@ function handleClick() {
     var buttonPress = this.innerHTML;
 
     makeSound(buttonPress);
+    buttonAni(buttonPress);
 
 }
 
@@ -17,6 +18,7 @@ function handleClick() {
 document.addEventListener("keydown", function(event) {
 
     makeSound(event.key);
+    buttonAni(event.key);
 
 });
 
@@ -72,4 +74,12 @@ function makeSound(key) {
         default:
             console.log("Huh?") 
         }
+}
+
+function buttonAni(currentKey) {
+   var activeBut = document.querySelector("." + currentKey);
+   activeBut.classList.add("pressed");
+   setTimeout(function() {
+    activeBut.classList.remove("pressed");
+   }, 400);
 }
