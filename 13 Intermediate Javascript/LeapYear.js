@@ -26,3 +26,28 @@ function isLeap(year) {
 
 isLeap(1948);
 isLeap(2020);
+
+// function isLeap(year) {
+//     /**************Don't change the code above****************/    
+    
+//     //Write your code here.
+    
+//     var remYear1 = year % 4;
+//     var remYear2 = year % 100;
+//     var remYear3 = year % 400;
+    
+//     if (remYear1 != 0) {
+//         console.log("Not leap year.")
+//     } if (remYear2 && remYear3 != 0) {
+//         console.log("Not leap year.")
+//     } else {
+//         console.log("Leap year.")
+//     }
+    
+
+//     /**************Don't change the code below****************/
+// }
+
+// isLeap(1948);
+// isLeap(2020);
+
